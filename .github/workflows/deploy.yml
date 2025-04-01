@@ -9,7 +9,7 @@ on:
 env:
   # `BASE_URL` determines the website is served from, including CSS & JS assets
   # You may need to change this to `BASE_URL: /${{ github.event.repository.name }}`
-  BASE_URL: '' # ODyn-StAndrews.github.io/${{ github.event.repository.name }} # Not required for 'ODyn-StAndrews.github.io' domain. Other repos will need to set this!
+  BASE_URL: ODyn-StAndrews.github.io/${{ github.event.repository.name }} # Not required for 'ODyn-StAndrews.github.io' domain. Other repos will need to set this!
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
