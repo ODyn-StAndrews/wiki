@@ -2,12 +2,13 @@
 version: 1
 project:
   id: a7baa3aa-9320-426c-9d4e-d531c3ef4887
-  # title:
+  title: ODyn @ St Andrews
   # description:
   # keywords: []
   # authors: []
   github: https://github.com/ODyn-StAndrews/ODyn-StAndrews-Wiki.github.io
   # To autogenerate a Table of Contents, run "myst init --write-toc"
+    
 site:
   template: book-theme
   # options:
