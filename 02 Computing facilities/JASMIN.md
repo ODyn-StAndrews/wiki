@@ -106,4 +106,4 @@ wget https://gws-access.jasmin.ac.uk/public/co2clim/path/to/file .
 ## Software
 Many software packages are maintained in the [Jaspy Software Environment](https://help.jasmin.ac.uk/docs/software-on-jasmin/jaspy-envs). This is a (set of) master conda environments that contain many of the packages you may use on a daily basis (xarray, xhistogram, mayplotlib, cartopy, etc.).
 
-If there are packages or environments that you need that are not included as part of `Jaspy`, you can also install `miniconda` using the protocol outlined [here](https://help.jasmin.ac.uk/docs/software-on-jasmin/creating-and-using-miniconda-environments/).
+If there are packages or environments that you need that are not included as part of `Jaspy`, you can also install `miniforge` using the protocol outlined [here](https://help.jasmin.ac.uk/docs/software-on-jasmin/creating-and-using-miniconda-environments/).
