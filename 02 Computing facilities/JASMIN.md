@@ -1,3 +1,5 @@
+# JASMIN
+
 This documentation provides useful points of reference for working on JASMIN. It *should not* be used as a step-by-step guide for working on that service. For that, there is extensive documentation on the JASMIN website.
 
 [JASMIN help documents](https://help.jasmin.ac.uk/)  
@@ -104,4 +106,6 @@ wget https://gws-access.jasmin.ac.uk/public/co2clim/path/to/file .
 ## Software
 Many software packages are maintained in the [Jaspy Software Environment](https://help.jasmin.ac.uk/docs/software-on-jasmin/jaspy-envs). This is a (set of) master conda environments that contain many of the packages you may use on a daily basis (xarray, xhistogram, mayplotlib, cartopy, etc.).
 
-If there are packages or environments that you need that are not included as part of `Jaspy`, you can also install `miniconda` using the protocol outlined [here](https://help.jasmin.ac.uk/docs/software-on-jasmin/creating-and-using-miniconda-environments/).
+If there are packages or environments that you need that are not included as part of `Jaspy`, you can also install `miniforge` using the protocol outlined [here](https://help.jasmin.ac.uk/docs/software-on-jasmin/creating-and-using-miniconda-environments/). To make this newly created environment accessible from within the notebooks service, follow the instructions [here](https://help.jasmin.ac.uk/docs/interactive-computing/creating-a-virtual-environment-in-the-notebooks-service/#can-i-use-conda-instead-of-a-virtual-environment).
+
+You can also create virtual environments for access within the notebooks service following the instructions [here](https://help.jasmin.ac.uk/docs/interactive-computing/creating-a-virtual-environment-in-the-notebooks-service/).

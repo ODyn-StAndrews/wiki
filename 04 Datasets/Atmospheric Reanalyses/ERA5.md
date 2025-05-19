@@ -1,5 +1,7 @@
 # ERA5
 
+> :warning: This approach for accessing ERA5 data is out-of-date and discontinued. This page will be updated in due course.
+
 [Homepage](https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5)  
 Download location: [Copernicus](https://cds.climate.copernicus.eu/#!/search?text=ERA5&type=dataset)  
 
