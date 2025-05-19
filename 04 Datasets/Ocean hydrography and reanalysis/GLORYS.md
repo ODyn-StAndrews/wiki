@@ -16,7 +16,7 @@ Download location: [Copernicus Marine Data Store](https://data.marine.copernicus
 * If the dataset is small enough and you want to download *locally* (i.e. to the computer in which you have launched the browser) you will be able to do so using the clickable icon in the upper right.
 * If the dataset is too large, or if you're downloading directly to a remote machine, click on the "Automate" button on the upper right. This will open a pop up with both a "Command-Line Interface" and a "Python API" tab, with the exact commands that you need to use to download the data. Copy and paste these into a python script (locally if you want to download to your local computer, or on a remote machine), and run that script.
 
-An example of the python approach to downloading daily GLORYS data for the North Atlantic is given below (copy and paste this into a python script and execute from the command line, e.g. `python download_glorys.py`).
+An example of the python approach to downloading daily GLORYS data for the North Atlantic is given below:
 
 ```
 import copernicusmarine
@@ -32,6 +32,8 @@ copernicusmarine.subset(
   end_datetime="2021-06-30T00:00:00",
   minimum_depth=0.49402499198913574,
   maximum_depth=0.49402499198913574,
+  file_format='zarr'
 )
 ```
 
+By default, the tool downloads `.nc` files, but these can get large and unwieldy. For large datasets, downloading as `zarr` store helps with data IO. Other useful options for the `subset` command are to issue your Copernicus `username` and `password` directly, and to specify an `output_directory`.
