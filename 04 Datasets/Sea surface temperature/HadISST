@@ -1,0 +1,10 @@
+Merged sea surface temperatuer and sea ice cover dataset from the UK Met Office (Hadley Centre)
+
+[Homepage](https://www.metoffice.gov.uk/hadobs/hadisst/index.html)  
+Download location: [Version 1, accessible from homepage](https://www.metoffice.gov.uk/hadobs/hadisst/data/download.html)
+
+**Download procedure**
+* Download locally **OR** use example `wget` commands (as detailed at download location)
+    * Note that there are `.txt` files for each year, or a merged `.nc` at the link at the bottom of the download page
+    * `wget https://www.metoffice.gov.uk/hadobs/hadisst/data/HadISST_sst.nc.gz`
+* Unzip
