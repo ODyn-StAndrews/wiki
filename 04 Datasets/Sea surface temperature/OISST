@@ -1,0 +1,18 @@
+# OISST
+Optimally intepolated sea surface temperature, from NOAA.
+
+[Homepage](https://www.ncei.noaa.gov/products/optimum-interpolation-sst)  
+Download location: 
+* THREDDS catalog accessible from homepage.
+* Alternative download location via the Physical Sciences Laboratory [here](https://psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html)
+
+**Download procedure**
+*From PSL*
+* Easiest: `.nc` files available from PSL can be downloaded more easily
+```
+wget https://downloads.psl.noaa.gov/Datasets/noaa.oisst.v2.highres/sst.mon.mean.nc
+```
+* NOTE that it is not completely clear whether this is v2 or v2.1
+
+*From NCEI*
+* Download recursively from THREDDS catalog using `wget`
