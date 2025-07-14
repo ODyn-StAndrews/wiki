@@ -1,0 +1,14 @@
+# COBE-SST 2
+Merged sea surface temperature prduct from the Japanese Meteorological Association
+
+
+[(Unofficial) Homepage](https://psl.noaa.gov/data/gridded/data.cobe2.html)  
+Download location: 
+* From homepage.
+
+**Download procedure**
+*From PSL*
+* Easiest: `.nc` files available from PSL can be downloaded more easily
+```
+wget https://downloads.psl.noaa.gov//Datasets/COBE2/sst.mon.mean.nc
+```
