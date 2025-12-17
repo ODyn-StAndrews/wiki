@@ -2,6 +2,8 @@
 
 We are always excited to hear from prospective graduate students. Don't hesitate to reach out to Graeme, or one of the team, as early as possible if you're interested in joining us! Here, you'll find some information about what the application process involves, and specifically, how to make sure you can get funding to come here.
 
+For both prospective and matriculated graduate students, the [University Fees and Funding portal](https://www.st-andrews.ac.uk/study/postgraduate/fees/) is an excellent resource. You can search here both for scholarship funding to attend the university, and for travel and research grants while studying here.
+
 # Applying for and funding your PhD
 An application to study for a PhD at the University of St Andrews involves two components. On the one hand, you must apply to the University itself. You can find lots of information about how to do that on the University's [Postgraduate Research page](https://www.st-andrews.ac.uk/study/postgraduate-research/). Acceptance here would be based on your suitability to carry out research in the School. Concurrently, you need to **secure funding** for your PhD and, as in many places, it is this latter process that is often the most challenging and competitive.
 
