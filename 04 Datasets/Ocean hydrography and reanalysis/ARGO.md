@@ -8,8 +8,35 @@ wget https://www.seanoe.org/data/00311/42182/data/125185.tar.gz
 ```
 where the URL is the copied link.
 
-This approach downloads a zipped `tar`-ball. You need to first unzip that with `gunzip`. The remaining `tar`-ball contains zipped data at a variety of levels, including both single files with all profiles and individual files with each individual profile. This makes unpacking a heavy lift. Instead, you can extract only the `*_prof.nc` files using
+This approach downloads a zipped `tar`-ball. Extracting relevant data from this `tar`-ball can be rather a heavy lift. You can see what's inside the `tar`-ball with
 ```
-tar -I pigz --wildcards -xvf 125185.tar.gz '*prof.nc'
+tar -tzf file.tar.gz
 ```
-Note that the `-I pigz` is there to run the unzip procedure in parallel. It is not always available on all machines.
+or 
+```
+tar -tzf file.tar.gz | sed 's|[^/]*/| |g'
+```
+to make it like a directory tree.
+
+One option is to extract only the core argo files and then only the full profile files (rather than each profile individually). Some bash code for doing that is:
+```
+set -euo pipefail
+
+MAIN="125185.tar.gz"
+WORK="./_work_125185"
+OUT="./profiles"
+
+mkdir -p "$WORK" "$OUT"
+
+echo "=== Stage 1: Extracting *_core.tar.gz from $MAIN ==="
+tar -xzvf "$MAIN" -C "$WORK" --wildcards --no-anchored '*_core.tar.gz'
+
+echo "=== Stage 2: Extracting *prof.nc from each core archive ==="
+
+find "$WORK" -type f -name "*_core.tar.gz" -print0 | while IFS= read -r -d '' core; do
+  echo "---- Processing $core ----"
+  tar -xzvf "$core" -C "$OUT" --wildcards --no-anchored '*prof.nc'
+done
+
+echo "=== Done ==="
+```
