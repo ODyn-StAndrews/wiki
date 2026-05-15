@@ -1,4 +1,9 @@
-# Compiling on local Ubuntu machine
+# Compiling CEFI-regional-mom6
+General ressources:
+- [CEFI-regional-mom6 documentation](https://cefi-regional-mom6.readthedocs.io/en/latest/)
+- [MOM6 documentation](https://mom6.readthedocs.io/en/main/)
+
+## Compiling on a local Ubuntu machine
 Follow the instructions given in the [CEFI-regional-MOM6 Users Guide](https://cefi-regional-mom6.readthedocs.io/en/latest/BuildMOM6.html). This guide is generally comprehensive. Below are minor departures from the guide I found necessary to get the model up and running of an Ubuntu 24.04.1 LTS machine.
 
 ### 'mkmf' template
@@ -29,10 +34,10 @@ In order to reach the executable, I needed to remove the hypthen. The executable
 builds/build/YOUR_MACHINE_DIRECTORY/NAME_OF_YOUR_mk_FILE/ocean_ice/repro/MOM6SIS2 
 ```
 
-# Compiling on ARCHER2
+## Compiling on ARCHER2
 Follow the instructions given in the [CEFI-regional-MOM6 Users Guide](https://cefi-regional-mom6.readthedocs.io/en/latest/BuildMOM6.html). Specific modifications needed for compilation on Archer2 (compilation environment and `mk` file edits) are described [here](https://odyn-standrews.github.io/wiki/compiling-mom6-on-archer2/)
 
-# Running the test experiment
+## Running the test experiment
 You should now be able to run the example experiment following the guide. As an additional note, make sure to unzip the model input files into `exps/`, and check the `OceanBGC_dataset` file is located in the folder called `OceanBGC_dataset` and the `OM4_025.JRA.single_column.tar.gz` files is in the folder called `OM4_025.JRA.single_column`. Go into the `exps/OM4.single_column.COBALT/INPUT` to make sure that all the soft links are working properly.
 
 
