@@ -2,24 +2,25 @@
 
 1. Connect to Hypatia:
     
-    ssh -Y <xxxx>@hypatia.st-andrews.ac.uk
+    ssh -Y your.email@hypatia.st-andrews.ac.uk
+   (see post on connecting to Hypatia for further info) 
     
-2. Configure Git on the Cluster: 
+3. Configure Git on the Cluster: 
     
     Set Git identity once on the Hypatia system to ensure commits made on the cluster are tracked on Github 
     
-    git config --global user.email "<xxxx>@st-andrews.ac.uk"
-    git config --global user.name "<username>"
+    git config --global user.email "your.email@st-andrews.ac.uk"
+    git config --global user.name "your.username"
     git config --global credential.helper cache
     
-3. Clone GitHub fork of MITgcm: 
+4. Clone GitHub fork of MITgcm: 
     
     Clone your personal fork to your home directory to create a working copy from which you can build and edit the model:
     
-    git clone https://github.com/<username>/MITgcm.git
+    git clone https://github.com/your.username/MITgcm.git
     cd MITgcm
     
-4. Connect fork to the official MITgcm repo:
+5. Connect fork to the official MITgcm repo:
     
     Add the source repo as an upstream remote:
     
@@ -30,7 +31,7 @@
     
     git fetch upstream
     
-5. Cretate a new branch from the master branch 
+6. Cretate a new branch from the master branch 
     
     git checkout -b unmodified upstream/master
     
@@ -94,13 +95,13 @@ MITgcm is not compiles as a single universal source tree. Each experiment define
 
 FULL:
 
-ssh -Y anb7@hypatia.st-andrews.ac.uk
+ssh -Y your.email@hypatia.st-andrews.ac.uk
 
-git config --global user.email "<xxxx>7@st-andrews.ac.uk"
-git config --global user.name "<username>"
+git config --global user.email "your.email@st-andrews.ac.uk"
+git config --global user.name "your.username"
 git config --global credential.helper cache
 
-git clone https://github.com/<username>/MITgcm.git
+git clone https://github.com/your.username/MITgcm.git
 cd MITgcm
 git remote add upstream https://github.com/MITgcm/MITgcm.git
 git fetch upstream
