@@ -35,6 +35,10 @@ These mailing lists generally include postings on jobs and PhD opportunities, as
 - Jobs and opportunities in Earth Sciences
 - [Subscribe](https://mailman.ucar.edu/mailman/listinfo/es_jobs_net)
 
+**UK Polar Network**
+- Posts about polar-related seminars and jobs in the UK
+- [Subscribe](https://polarnetwork.org/contact-us/)
+
 **Met Jobs**
 - Jabs and opportunities predominantly in atmosphere and ocean sciences
 - [Subscribe](https://maillists.reading.ac.uk/scripts/wa-READING.exe?INDEX) (search for MET-JOBS)
