@@ -9,11 +9,9 @@ Before proceeding with compiling, you need to inlude a `hypatia`-specific `mkmf`
 
 ## 1. Load the environment
 
-Run everything in the same shell:
+Run everything in the same shell. First, change directory to your MOM6-examples repository.
 
 ```
-cd /home/gam24/pkgs/MOM6-examples
-
 module purge
 module load gnu/14.2.0
 module load openmpi/5.0.7
@@ -84,6 +82,7 @@ Generate its source manifest:
 ```
 mkdir -p build/fms
 cd build/fms
+rm -f path_names
 
 ../../src/mkmf/bin/list_paths -l ../../src/FMS
 ```
@@ -133,14 +132,11 @@ Generate its source manifest:
 ```
 mkdir -p build/ocean_only
 cd build/ocean_only
+rm -f path_names
 
 ../../src/mkmf/bin/list_paths -l \
-  ../../src/MOM6/config_src/infra/FMS1 \
-  ../../src/MOM6/config_src/memory/dynamic_symmetric \
-  ../../src/MOM6/config_src/drivers/solo_driver \
-  ../../src/MOM6/config_src/external \
-  ../../src/MOM6/src \
-  ../../src/FMS/coupler/atmos_ocean_fluxes.F90
+  ./ \
+  ../../src/MOM6/{config_src/infra/FMS1,config_src/memory/dynamic_symmetric,config_src/drivers/solo_driver,config_src/external,src/{*,*/*}}/
 ```
 
 Generate the Makefile:
@@ -190,23 +186,14 @@ This compiles MOM6, SIS2, the coupler, null atmosphere and land models, ice para
 ```
 mkdir -p build/ice_ocean_SIS2
 cd build/ice_ocean_SIS2
+rm -f path_names
 
 ../../src/mkmf/bin/list_paths -l \
-  ../../src/MOM6/config_src/infra/FMS1 \
-  ../../src/MOM6/config_src/memory/dynamic_symmetric \
-  ../../src/MOM6/config_src/drivers/FMS_cap \
-  ../../src/MOM6/config_src/external \
+  ./ \
+  ../../src/MOM6/config_src/{infra/FMS1,memory/dynamic_symmetric,drivers/FMS_cap,external} \
   ../../src/SIS2/config_src/dynamic_symmetric \
-  ../../src/SIS2/config_src/external \
-  ../../src/MOM6/src \
-  ../../src/SIS2/src \
-  ../../src/atmos_null \
-  ../../src/coupler \
-  ../../src/land_null \
-  ../../src/ice_param \
-  ../../src/icebergs/src \
-  ../../src/FMS/coupler \
-  ../../src/FMS/include
+  ../../src/MOM6/src/{*,*/*}/ \
+  ../../src/{atmos_null,coupler,land_null,ice_param,icebergs/src,SIS2,FMS/coupler,FMS/include}/
 ```
 
 Generate the Makefile:
