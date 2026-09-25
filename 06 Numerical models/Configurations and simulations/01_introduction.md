@@ -1,2 +1,5 @@
 # Configurations and simulations
-In this folder, you will find pages with a log of different configurations and simulations that have been run by different members of the research group. Each page will correspond to the basic model configuration, and within each page will be a brief description of the configuration, a list of different simulations that have been conducted, and links/locations for where the configuration and model output can be found.
+
+[This link](https://docs.google.com/spreadsheets/d/1bRa3-w6OTDtDa4vikCc3n29jxoDsDlYlM0xYZZcrXxE/edit?usp=sharing) hosts a log of completed and ongoing model simulations. It includes information on the details of the simulations (model, configuration, resolution, etc.), the output (frequency, diagnostics, etc.), and where this output is stored.  
+
+The spreadsheet is view-only, to not lose information, so contact Maddie Shankle or Graeme MacGilchrist to add an entry to it.  
